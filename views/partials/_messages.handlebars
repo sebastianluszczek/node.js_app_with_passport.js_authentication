@@ -1,0 +1,25 @@
+{{#if errors }}
+{{#each errors }}
+<div class="card-panel red accent-1">
+    <div class="red-text text-darken-4">{{msg}}<i class="fas fa-times right"></i></div>
+</div>
+{{/each}}
+{{/if}}
+
+{{#if success_msg}}
+<div class="card-panel green accent-1">
+    <div class="green-text text-darken-4">{{success_msg}}<i class="fas fa-times right"></i></div>
+</div>
+{{/if}}
+
+{{#if error_msg}}
+<div class="card-panel red accent-1">
+    <div class="red-text text-darken-4">{{error_msg}}<i class="fas fa-times right"></i></div>
+</div>
+{{/if}}
+
+{{#if error}}
+<div class="card-panel red accent-1">
+    <div class="red-text text-darken-4">{{error}}<i class="fas fa-times right"></i></div>
+</div>
+{{/if}}

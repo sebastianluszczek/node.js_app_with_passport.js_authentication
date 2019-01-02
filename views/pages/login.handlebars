@@ -1,0 +1,22 @@
+<div class="row mt-5">
+    <div class="col s12 m6 offset-m3">
+        <div class="card center-align">
+            <div class="card-content">
+                <h3><i class="fas fa-sign-in-alt"></i> Login</h3>
+                <form action="/user/login" method="POST"  class="mt-3">
+                    {{> _messages}}
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" class="validate" />
+                    </div>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="validate" />
+                    </div>
+                    <button type="submit" class="btn btn-large red darken-3 white-text">Login</button>
+                </form>
+                <p class="mt-3">No Account? <a href="/user/register" class="red-text text-darken-3">Register</a></p>
+            </div>
+        </div>
+    </div>
+</div>
